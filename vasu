@@ -1,23 +1,11 @@
-ode {
-       stage('build')                                                        
+pipeline {
+    agent any
 
-     {
-        echo "building the project ..........."
-     }
-
-       stage('deploy')
-
-     {
-        echo "deploying the Project .........."
-     }
-
-       stage('test')
-    {
-       echo "testing the project............."
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
     }
-
-      stage('release')
-   {
-     echo "releasing the project.............."
-   }
 }
