@@ -1,0 +1,23 @@
+ode {
+       stage('build')                                                        
+
+     {
+        echo "building the project ..........."
+     }
+
+       stage('deploy')
+
+     {
+        echo "deploying the Project .........."
+     }
+
+       stage('test')
+    {
+       echo "testing the project............."
+    }
+
+      stage('release')
+   {
+     echo "releasing the project.............."
+   }
+}
